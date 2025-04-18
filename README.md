@@ -28,10 +28,8 @@
 
 ---
 
-## 🚀 Installation
-
-1. Assurez-vous que **ffmpeg** est installé et accessible depuis le terminal (`ffmpeg -version`).
-2. Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
+## 🚀 
+- Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
 
 💾 Un installateur `mp3Setup.bat` est inclus pour ajouter automatiquement la commande `mp3` au **PATH système Windows**, facilitant son utilisation depuis n’importe quel terminal.
 
