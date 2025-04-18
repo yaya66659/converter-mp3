@@ -1,65 +1,95 @@
 # 🎵 Converter MP3
 
-> Une commande console pour convertir rapidement des fichiers audio/vidéo en MP3 à l’aide de `ffmpeg`, codée en C pour Windows.
+> Une commande console simple et rapide pour convertir des fichiers audio/vidéo en MP3, ou compresser des vidéos, grâce à `ffmpeg` — codée en C pour Windows.
 
 ---
 
 ## 📦 Description
 
-**Converter MP3** est une commande personnalisée appelée `mp3`, qui permet de :
+**Converter MP3** est une commande personnalisée nommée `mp3`, pensée pour simplifier l’usage de `ffmpeg` via le terminal Windows. Elle permet de :
 
-- 🎧 Convertir un fichier audio en `.mp3`
-- 🎥 Extraire l’audio d’un fichier vidéo vers `.mp3`
-- 🐞 Activer un mode `debug` pour afficher des infos techniques
-- 📘 Afficher un manuel d’utilisation
+- 🎧 Convertir un **fichier audio** en `.mp3`
+- 🎥 Extraire l’audio d’un **fichier vidéo** en `.mp3`
+- 🗜️ Compresser une **vidéo** avec une nouvelle version suffixée `_Compressee.mp4`
+- 🐞 Activer un **mode debug** pour afficher les détails internes
+- 📘 Consulter un **manuel d’utilisation** intégré
+- 🛠️ Installer automatiquement `mp3` dans le **PATH système** via `mp3Setup.bat`
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-- Langage C (standard C89/C99)
-- ffmpeg (outil externe indispensable)
-- Windows CMD
-- Script d'installation `.bat`
+- Langage **C**
+- Bibliothèque externe : [`ffmpeg`](https://ffmpeg.org/)
+- CMD / terminal Windows
+- Script batch : `mp3Setup.bat`
 
 ---
 
 ## 🚀 Installation
 
-1. Assurez-vous que **ffmpeg** est installé et accessible depuis le terminal (`ffmpeg -version`).
-2. Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
+1. Exécutez le script d'installation :
+   ```bash
+   mp3Setup.bat
+   ```
+   (clic droit → *Exécuter en tant qu’administrateur*)
 
-💾 Un installateur `mp3Setup.bat` est inclus pour ajouter automatiquement la commande `mp3` au **PATH système Windows**, facilitant son utilisation depuis n’importe quel terminal.
+📌 Ce script ajoute `mp3.exe` automatiquement au `PATH` système pour permettre l'exécution depuis n’importe quel dossier.
 
+2. Assurez-vous que `ffmpeg` est installé et accessible depuis votre terminal :
+   ```bash
+   ffmpeg -version
+   ```
+
+📌**'mp3Setup.bat'** installe et ajoute `ffmpeg` automatiquement au `PATH` système pour permettre l'exécution depuis n’importe quel dossier.
 ---
 
 ## 🧪 Utilisation
+
+### ▶️ Conversion audio ou extraction audio :
 
 ```bash
 mp3 chemin/vers/fichier.ext
 ```
 
-Mode debug :
+- Si le fichier est audio → converti en `.mp3`
+- Si le fichier est vidéo → extrait l’audio en `.mp3`
+
+### 🔧 Compression vidéo :
+
+```bash
+mp3 chemin/vers/video.ext -c
+```
+
+- Produit un nouveau fichier compressé nommé `video_Compressee.mp4`
+
+### 🐞 Mode debug :
 
 ```bash
 mp3 chemin/vers/fichier.ext -debug
 ```
 
----
+- Affiche l’extension, le nom sans extension, le type (audio/vidéo), etc.
 
-## 🖼️ Exemple
+### 🔀 Combinaison compression + debug :
 
 ```bash
-mp3 musique.wav
-# => Convertit musique.wav en musique.mp3
-
-mp3 film.mp4
-# => Extrait l’audio du film.mp4 vers film.mp3
+mp3 chemin/vers/video.ext -c -debug
 ```
 
 ---
 
-## 📂 Arborescence
+## 📘 Manuel intégré
+
+En lançant la commande sans arguments, ou avec un argument erroné, le **manuel s’affiche automatiquement**.
+
+```bash
+mp3
+```
+
+---
+
+## 📂 Arborescence type
 
 ```
 Converter_MP3/
@@ -70,8 +100,30 @@ Converter_MP3/
 ├── src/
 │   ├── fct.c
 │   └── main.c
-├── Makefile
-└── mp3Setup.bat
+├── mp3Setup.bat
+├── README.md
+└── Makefile (optionnel)
+```
+
+---
+
+## 📸 Exemples
+
+```bash
+mp3 ma_musique.wav
+# => Convertit ma_musique.wav en ma_musique.mp3
+
+mp3 mon_film.mp4
+# => Extrait le son de mon_film.mp4 en mon_film.mp3
+
+mp3 mon_film.mp4 -c
+# => Crée une version compressée : mon_film_Compressee.mp4
+
+mp3 ma_musique.wav -debug
+# => Affiche les détails techniques
+
+mp3 mon_film.mp4 -c -debug
+# => Affiche les détails techniques
 ```
 
 ---
@@ -79,7 +131,7 @@ Converter_MP3/
 ## 👤 Auteur
 
 Développé par **Yann Pichat**  
-Contact : *à personnaliser*
+📧 Contact : *(à personnaliser selon ton choix)*
 
 ---
 
@@ -93,8 +145,8 @@ Vous êtes libre de :
 - le partager,
 - l’étudier,
 
-**tant que cela reste dans un cadre personnel, éducatif ou non commercial.**
+**Tant que cela reste dans un cadre personnel, éducatif ou non commercial.**
 
-➡️ Pour toute utilisation commerciale, une autorisation écrite de l’auteur est requise.
+➡️ Pour toute utilisation commerciale, une **autorisation écrite** de l’auteur est requise.
 
 © Yann Pichat – 2025

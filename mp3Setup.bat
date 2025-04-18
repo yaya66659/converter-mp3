@@ -96,7 +96,7 @@ if errorlevel 1 (
     setx PATH "!UserPath!"
     echo.
     echo ✅ Le chemin "%TARGET_DIR%" a été ajouté au PATH.
-    echo 🔁 Veuillez ouvrir un nouveau terminal pour que le ch  angement prenne effet.
+    echo 🔁 Veuillez ouvrir un nouveau terminal pour que le ch angement prenne effet.
 
     
 )
