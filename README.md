@@ -30,7 +30,6 @@
 
 ---
 
-<<<<<<< HEAD
 ## 🚀 Installation
 
 1. Exécutez le script d'installation :
@@ -140,7 +139,7 @@ mp3 mon_film.mp4 -c -debug
 ## 👤 Auteur
 
 Développé par **Yann Pichat**  
-📧 Contact : *(à personnaliser selon ton choix)*
+📧 Contact : yann55446@gmail.com
 
 ---
 
