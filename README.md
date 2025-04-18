@@ -4,6 +4,10 @@
 
 ---
 
+## [>]  Telechargement :
+
+[CMDmp3](https://drive.google.com/file/d/1RCoZLyLohY17O72PsQJ1hkWmipZXt_LQ/view?usp=sharing)
+
 ## 📦 Description
 
 **Converter MP3** est une commande personnalisée nommée `mp3`, pensée pour simplifier l’usage de `ffmpeg` via le terminal Windows. Elle permet de :
@@ -26,6 +30,7 @@
 
 ---
 
+<<<<<<< HEAD
 ## 🚀 Installation
 
 1. Exécutez le script d'installation :
@@ -33,6 +38,10 @@
    mp3Setup.bat
    ```
    (clic droit → *Exécuter en tant qu’administrateur*)
+=======
+## 🚀 
+- Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
+>>>>>>> ac1d3f8044b42c7d60afa115571f20c6f943c853
 
 📌 Ce script ajoute `mp3.exe` automatiquement au `PATH` système pour permettre l'exécution depuis n’importe quel dossier.
 
