@@ -45,12 +45,10 @@
    (clic droit → *Exécuter en tant qu’administrateur*)
 =======
 ## 🚀 
-- Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
->>>>>>> ac1d3f8044b42c7d60afa115571f20c6f943c853
-
+- 1. Exécutez le script `mp3Setup.bat` (clic droit → Exécuter en tant qu’administrateur).
 📌 Ce script ajoute `mp3.exe` automatiquement au `PATH` système pour permettre l'exécution depuis n’importe quel dossier.
 
-2. Assurez-vous que `ffmpeg` est installé et accessible depuis votre terminal :
+- 2. Assurez-vous que `ffmpeg` est installé et accessible depuis votre terminal :
    ```bash
    ffmpeg -version
    ```
