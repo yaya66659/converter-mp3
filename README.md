@@ -1,7 +1,9 @@
 # 🎵 Converter MP3
 
 > Une commande console simple et rapide pour convertir des fichiers audio/vidéo en MP3, ou compresser des vidéos, grâce à `ffmpeg` — codée en C pour Windows.
-> Ce projet utilise ffmpeg comme outil externe. ffmpeg est un projet open-source sous licence LGPL/GPL. Pour plus d’informations, visitez : https://ffmpeg.org
+
+> Ce logiciel utilise ffmpeg en arrière-plan, un outil libre de traitement audio/vidéo distribué sous la licence GNU LGPL ou GPL selon les options de compilation.
+  Pour plus d'informations, consultez https://ffmpeg.org et https://ffmpeg.org/legal.html.
 
 
 
@@ -17,6 +19,7 @@
 
 - 🎧 Convertir un **fichier audio** en `.mp3`
 - 🎥 Extraire l’audio d’un **fichier vidéo** en `.mp3`
+- 🎧 Compresser un audio **.wav** ou **.WAV** en gardant le format `WAVE (mon_audio_compresse.wav)`
 - 🗜️ Compresser une **vidéo** avec une nouvelle version suffixée `_Compressee.mp4`
 - 🐞 Activer un **mode debug** pour afficher les détails internes
 - 📘 Consulter un **manuel d’utilisation** intégré
@@ -124,6 +127,9 @@ Converter_MP3/
 mp3 ma_musique.wav
 # => Convertit ma_musique.wav en ma_musique.mp3
 
+mp3 ma_musique.wav -c
+# => Compresse ma_musique.wav en ma_musique_compresse.wav (valable pour les .WAV)
+
 mp3 mon_film.mp4
 # => Extrait le son de mon_film.mp4 en mon_film.mp3
 
@@ -158,6 +164,6 @@ Vous êtes libre de :
 
 **Tant que cela reste dans un cadre personnel, éducatif ou non commercial.**
 
-➡️ Pour toute utilisation commerciale, une **autorisation écrite** de l’auteur est requise.
+➡️ Toute utilisation commerciale est **INTERDITE**.
 
 © Yann Pichat – 2025
