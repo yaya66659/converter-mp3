@@ -1,6 +1,9 @@
 # 🎵 Converter MP3
 
 > Une commande console simple et rapide pour convertir des fichiers audio/vidéo en MP3, ou compresser des vidéos, grâce à `ffmpeg` — codée en C pour Windows.
+> Ce projet utilise ffmpeg comme outil externe. ffmpeg est un projet open-source sous licence LGPL/GPL. Pour plus d’informations, visitez : https://ffmpeg.org
+
+
 
 > Ce logiciel utilise ffmpeg en arrière-plan, un outil libre de traitement audio/vidéo distribué sous la licence GNU LGPL ou GPL selon les options de compilation.
   Pour plus d'informations, consultez https://ffmpeg.org et https://ffmpeg.org/legal.html.
